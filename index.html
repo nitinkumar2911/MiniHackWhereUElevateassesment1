@@ -3,19 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaaSify | Join Us</title>
+    <title>SaaSify | Home</title>
     <style>
-        body { font-family: Arial, sans-serif; color: #333333; margin: 0; padding: 0; line-height: 1.6; }
-        .navbar { background-color: #1e293b; padding: 20px; }
-        .navbar .logo { font-size: 24px; font-weight: bold; display: inline; color: #ffffff; }
-        .navbar .logo span { color: #6366f1; }
-        .navbar ul { list-style-type: none; display: inline; margin: 0; padding: 0; float: right; }
-        .navbar ul li { display: inline; margin-left: 20px; }
-        .navbar ul li a { color: #ffffff; text-decoration: none; font-weight: bold; }
-
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .navbar {
+            background-color: #1e293b;
+            padding: 20px;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: inline;
+            color: #ffffff;
+        }
+        .navbar .logo span {
+            color: #6366f1;
+        }
+        .navbar ul {
+            list-style-type: none;
+            display: inline;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+        .navbar ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        .navbar ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar ul li a:hover, .navbar ul li a.active {
+            color: #6366f1;
+        }
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        .hero {
+            padding: 60px 0;
+            background-color: #f8fafc;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 36px;
+            color: #0f172a;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #64748b;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        .btn {
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            display: inline-block;
+        }
+        .btn-primary {
+            background-color: #6366f1;
+            color: #ffffff;
+        }
+        .btn-primary:hover {
+            background-color: #4f46e5;
+        }
+        .btn-secondary {
+            background-color: #e2e8f0;
+            color: #0f172a;
+            margin-left: 10px;
+        }
+        .btn-secondary:hover {
+            background-color: #cbd5e1;
+        }
+        .row {
+            margin: 30px 0;
+        }
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .col-4 {
+            width: 23%;
+            float: left;
+            margin: 1%;
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        .col-2 {
+            width: 48%;
+            float: left;
+            margin: 1%;
+            box-sizing: border-box;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            color: #0f172a;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding: 40px 0 20px;
+            margin-top: 60px;
+        }
+        footer h3, footer h4 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer ul li {
+            margin-bottom: 8px;
+        }
+        footer ul li a {
+            color: #94a3b8;
+            text-decoration: none;
+        }
+        footer ul li a:hover {
+            color: #ffffff;
+        }
+        .footer-bottom {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 30px;
+            border-top: 1px solid #334155;
+            padding-top: 20px;
+        }
     </style>
 </head>
 <body>
+
     <div class="navbar">
         <div class="logo">SaaS<span>ify</span></div>
         <ul>
@@ -26,6 +164,81 @@
         </ul>
         <div style="clear: both;"></div>
     </div>
-    
+
+    <div class="hero">
+        <div class="container">
+            <h1>We launch your code so you can get some sleep</h1>
+            <p>SaaSify takes care of the messy, frustrating parts of deploying software. No complex setups, no midnight server crashes. Just drop in your code and we'll handle the rest.</p>
+            <a href="contact.html" class="btn btn-primary">Try It For Free</a>
+            <a href="product.html" class="btn btn-secondary">See How It Works</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Built by developers, for developers</h2>
+        <p style="text-align: center; color: #64748b; margin-bottom: 40px;">Here are four core features we built to make your work days much smoother.</p>
+        
+        <div class="row">
+            <div class="col-4">
+                <h3>Ridiculously Fast</h3>
+                <p>Your application builds start running immediately on our globally optimized hardware nodes.</p>
+            </div>
+            <div class="col-4">
+                <h3>Rock-Solid Safety</h3>
+                <p>We lock down your digital projects behind default, automated isolation rules to block intruders.</p>
+            </div>
+            <div class="col-4">
+                <h3>Simple Dashboards</h3>
+                <p>Track your server speeds and resource limits from an easy interface that doesn't require a manual.</p>
+            </div>
+            <div class="col-4">
+                <h3>Set-and-Forget</h3>
+                <p>Link your code repository once. Every time you save your work, we update your live app cleanly.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="background-color: #f1f5f9; padding: 40px; border-radius: 8px;">
+        <div class="row">
+            <div class="col-2">
+                <h2>Spend time building features, not fixing infrastructure</h2>
+                <p>We got tired of spending our Friday nights playing computer plumber. That's why we made SaaSify run effortlessly in the background, freeing up your team to solve real design challenges.</p>
+            </div>
+            <div class="col-2" style="text-align: center; padding-top: 30px;">
+                <h3 style="font-size: 36px; color: #6366f1; margin: 0;">99.99%</h3>
+                <p style="font-weight: bold; color: #0f172a; margin: 5px 0 15px;">Real-World System Uptime</p>
+                <p style="color: #64748b;">We keep your digital services running around the clock without dropouts.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <h3>SaaSify</h3>
+                    <p>Just a small group of software engineers trying to make deployment less painful for creative product teams everywhere.</p>
+                </div>
+                <div class="col-4" style="margin-left: 4%;">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="product.html">Features & Pricing</a></li>
+                        <li><a href="about.html">Our Human Story</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h4>Get In Touch</h4>
+                    <ul>
+                        <li>Email: hello@saasify-app.io</li>
+                        <li>Based in Austin, Texas</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 SaaSify Project. Handcrafted by real developers.
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
