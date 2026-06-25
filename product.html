@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaSify | Product Features & Pricing</title>
+    <style>
+        body { font-family: Arial, sans-serif; color: #333333; margin: 0; padding: 0; line-height: 1.6; }
+        .navbar { background-color: #1e293b; padding: 20px; }
+        .navbar .logo { font-size: 24px; font-weight: bold; display: inline; color: #ffffff; }
+        .navbar .logo span { color: #6366f1; }
+        .navbar ul { list-style-type: none; display: inline; margin: 0; padding: 0; float: right; }
+        .navbar ul li { display: inline; margin-left: 20px; }
+        .navbar ul li a { color: #ffffff; text-decoration: none; font-weight: bold; }
+        .container { width: 85%; max-width: 1100px; margin: 0 auto; padding: 40px 0; }
+        
+        .row::after { content: ""; display: table; clear: both; }
+        .col-3 {
+            width: 31.33%;
+            float: left;
+            margin: 1%;
+            background-color: #ffffff;
+            border: 2px solid #e2e8f0;
+            padding: 30px;
+            border-radius: 8px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .col-3.featured {
+            border-color: #6366f1;
+            background-color: #f8fafc;
+            position: relative;
+        }
+        .badge {
+            background-color: #6366f1;
+            color: white;
+            padding: 4px 12px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 20px;
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .price { font-size: 36px; font-weight: bold; margin: 20px 0; color: #0f172a; }
+        
+        .testimonial {
+            background-color: #f8fafc;
+            border-left: 4px solid #6366f1;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .faq-item { margin-bottom: 12px; }
+        .faq-item details { background-color: #f1f5f9; padding: 15px; border-radius: 6px; }
+        .faq-item summary { font-weight: bold; cursor: pointer; color: #0f172a; }
+        .faq-item p { margin-top: 10px; color: #475569; }
+        
+        footer { background-color: #0f172a; color: #94a3b8; padding: 20px 0; text-align: center; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">SaaS<span>ify</span></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html" style="color: #6366f1;">Product</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="container">
+        <h1 style="text-align: center; color: #0f172a;">Features & Transparent Pricing</h1>
+        <p style="text-align: center; color: #64748b; max-width: 600px; margin: 10px auto 50px;">We keep our setup simple, our features powerful, and our pricing completely clear of hidden extras.</p>
+        
+        <div class="row">
+            <div class="col-3">
+                <h3>Hobby Sandbox</h3>
+                <div class="price">$0</div>
+                <p>Perfect for testing your personal experiments and learning the ropes.</p>
+                <a href="contact.html" style="background:#1e293b; color:#fff; padding:10px 20px; text-decoration:none; display:block; margin-top:20px; font-weight:bold; border-radius:6px;">Launch Sandpit</a>
+            </div>
+            <div class="col-3 featured">
+                <div class="badge">Most Popular</div>
+                <h3>Growing Team</h3>
+                <div class="price">$49<span style="font-size:16px; font-weight:normal; color:#64748b;">/mo</span></div>
+                <p>Full speed capacity and automatic updates for active client websites.</p>
+                <a href="contact.html" style="background:#6366f1; color:#fff; padding:10px 20px; text-decoration:none; display:block; margin-top:20px; font-weight:bold; border-radius:6px;">Get Pro Access</a>
+            </div>
+            <div class="col-3">
+                <h3>Custom Enterprise</h3>
+                <div class="price">Let's Talk</div>
+                <p>Dedicated server compliance nodes built for heavy corporate usage.</p>
+                <a href="contact.html" style="background:#1e293b; color:#fff; padding:10px 20px; text-decoration:none; display:block; margin-top:20px; font-weight:bold; border-radius:6px;">Email Sales</a>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 50px; color: #0f172a;">Real thoughts from real customers</h2>
+        <div class="testimonial">
+            <p>"SaaSify cut down our launch times down to minutes. The interface is clean and doesn't stress out our new developers."</p>
+            <strong>- Alex Rivera, Lead Engineer at ByteForge</strong>
+        </div>
+        <div class="testimonial">
+            <p>"Moving our systems over was painless. Our server bills are lower, and we actually get to log off on Fridays now."</p>
+            <strong>- Linda Zhao, Head of Operations at DevCore</strong>
+        </div>
+
+        <h2 style="margin-top: 50px; color: #0f172a;">Answers to common questions</h2>
+        <div class="faq-item">
+            <details>
+                <summary>Can I cancel or change plans whenever I want?</summary>
+                <p>Yes, absolutely. We work on a rolling month-to-month schedule. You can upgrade, downgrade, or cancel your account with one click anytime, no questions asked.</p>
+            </details>
+        </div>
+        <div class="faq-item">
+            <details>
+                <summary>Is my data and source code safe with you?</summary>
+                <p>Yes. Your security matters to us. Everything you upload sits behind industry-standard virtual isolation walls, and we regularly test our network blocks to keep hackers out.</p>
+            </details>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 SaaSify Project. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
