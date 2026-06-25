@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaSify | Join Us</title>
+    <style>
+        body { font-family: Arial, sans-serif; color: #333333; margin: 0; padding: 0; line-height: 1.6; }
+        .navbar { background-color: #1e293b; padding: 20px; }
+        .navbar .logo { font-size: 24px; font-weight: bold; display: inline; color: #ffffff; }
+        .navbar .logo span { color: #6366f1; }
+        .navbar ul { list-style-type: none; display: inline; margin: 0; padding: 0; float: right; }
+        .navbar ul li { display: inline; margin-left: 20px; }
+        .navbar ul li a { color: #ffffff; text-decoration: none; font-weight: bold; }
+        .container { width: 90%; max-width: 600px; margin: 0 auto; padding: 40px 0; }
+        
+        .form-box {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 35px;
+            border-radius: 8px;
+        }
+        .form-row {
+            margin-bottom: 20px;
+        }
+        .form-row label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: #0f172a;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+        .input-field:focus {
+            outline: none;
+            border-color: #6366f1;
+        }
+        .inline-options label {
+            display: inline;
+            font-weight: normal;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .btn-submit { background-color: #6366f1; color: #fff; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 15px; }
+        .btn-submit:hover { background-color: #4f46e5; }
+        .btn-reset { background-color: #64748b; color: #fff; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; margin-left: 10px; font-size: 15px; }
+        .btn-reset:hover { background-color: #475569; }
+        footer { background-color: #0f172a; color: #94a3b8; padding: 15px 0; text-align: center; margin-top: 60px; }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">SaaS<span>ify</span></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" style="color: #6366f1;">Contact</a></li>
+        </ul>
+        <div style="clear: both;"></div>
+    </div>
+
+    <div class="container">
+        <h1 style="text-align: center; color: #0f172a; margin-bottom: 10px;">Create your account</h1>
+        <p style="text-align: center; color: #64748b; margin-bottom: 30px;">Fill out this simple form to get your apps deployed today.</p>
+        
+        <div class="form-box">
+            <form action="#" method="POST">
+                
+                <div class="form-row">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" class="input-field" placeholder="Alex Smith" required minlength="2">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" class="input-field" placeholder="alex@company.com" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="phone">Phone Number (Format: 123-456-7890)</label>
+                    <input type="tel" id="phone" name="phone" class="input-field" placeholder="512-555-0199" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+
+                <div class="form-row">
+                    <label for="startdate">When do you want to launch?</label>
+                    <input type="date" id="startdate" name="startdate" class="input-field" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="plan">Select Your Subscription Plan</label>
+                    <select id="plan" name="plan" class="input-field" required>
+                        <option value="" disabled selected>Choose a tier...</option>
+                        <option value="sandbox">Hobby Sandbox Tier (Free)</option>
+                        <option value="grow">Growing Team Tier ($49/mo)</option>
+                        <option value="enterprise">Enterprise Custom Tier</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label>Preferred Cloud Host Network</label>
+                    <div class="inline-options">
+                        <label><input type="radio" name="cloud_host" value="aws" checked> Amazon AWS Servers</label>
+                        <label><input type="radio" name="cloud_host" value="gcp"> Google Cloud Hub</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="inline-options">
+                        <label><input type="checkbox" name="terms" value="agree" required> I read the terms and agree to keep things friendly.</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="notes">Any custom project needs or comments?</label>
+                    <textarea id="notes" name="notes" class="input-field" rows="4" placeholder="Tell us a little bit about what you are building..."></textarea>
+                </div>
+
+                <div style="padding-top: 10px;">
+                    <button type="submit" class="btn-submit">Sign Me Up</button>
+                    <button type="reset" class="btn-reset">Clear Form</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 SaaSify Project. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
